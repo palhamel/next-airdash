@@ -8,7 +8,7 @@ const table = base(process.env.AIRTABLE_TABLE_NAME)
 
 // iterate thru array and get the mini version for each:
 const minifyRecords = (records) => {
-  return records.map((record )=> getMinifiedRecord(record))
+  return records.map((record ) => getMinifiedRecord(record))
 }
 // if returned data has no 'completed' fields:
 const getMinifiedRecord = (record) => {

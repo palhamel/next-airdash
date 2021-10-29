@@ -31,13 +31,13 @@ export default function Home({ initialTodos }) {
   return (
     <div>
       <Head>
-        <title>Todo app with Next and Auth0</title>
+        <title>Data</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Navbar />
 
       <main>
-        <h1>Todo App with Next.js & Auth0</h1>
+        <h1>Display some data here:</h1>
         <br />
         <ul>
           {/* List all data using react context: */}
