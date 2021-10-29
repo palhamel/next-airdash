@@ -1,0 +1,5 @@
+/* for _app to wrap css to tailwind: */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
