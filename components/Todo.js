@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 
 // import { TodosContext } from '../contexts/TodosContext'
 
-export default function Todo({ data }) {
+export default function ShowData({ data }) {
   // const { updateTodo, deleteTodo } = useContext(TodosContext)
 
   // onChange event handler:
@@ -25,9 +25,12 @@ export default function Todo({ data }) {
         onChange={handleToggleCompleted}
         className='mr-2 form-checkbox h-5 w-5'
       /> */}
-      <p className={`flex-1 text-gray-800 ${data.fields.completed ? 'line-through' : ''}`}>{data.fields.projectId}</p>
       <p className="flex-1 text-gray-800">{data.fields.projectName}</p>
+      {/* <p className={`flex-1 text-gray-800 ${data.fields.completed ? 'line-through' : ''}`}>{data.fields.projectId}</p> */}
+      <p className="flex-1 text-gray-800">{data.fields.projectId}</p>
       <p className="flex-1 text-gray-800">{data.fields.deviceName}</p>
+      <p className="flex-1 text-gray-800">{data.fields.lastModified}</p>
+      <p className="flex-1 text-gray-800">{data.fields.campaign}</p>
       {/* <button
         type='button'
         className='text-sm bg-red-500 hover:bg-red-600 text-white py-1 px-2 rounded '

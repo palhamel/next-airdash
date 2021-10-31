@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
-import Todo from '../components/Todo'
+import ShowData from '../components/Todo'
 // import Image from 'next/image'
 // import styles from '../styles/Home.module.css'
 
@@ -42,8 +42,9 @@ export default function Home({ initialTodos }) {
         <ul>
           {/* List all data using react context: */}
           {/* {initialTodos.map((todo) => (<Todo key={todo.id} todo={todo} /> ))} */}
+          <li>Store Name</li>
 
-          {allData && allData.map((data) => <Todo data={data} key={data.id} />)}
+          {allData && allData.map((data) => <ShowData data={data} key={data.id} />)}
         </ul>
       </main>
     </div>

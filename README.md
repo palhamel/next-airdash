@@ -1,14 +1,21 @@
-## Next.js dashboard in progress
-
-#### install dependencies:
-- npm install
-
-#### run dev server:
-- npm run dev
+## Next.js dashboard - _in progress_
 
 #### Tech used:
 
 - Next.js with API routes, React context, AirTable, Tailwind CSS, ~~Auth0~~, 
+
+
+
+#### install dependencies:
+```
+npm install
+```
+
+#### run dev server:
+```
+npm run dev
+```
+
 <!-- 
 
 ## Getting Started
