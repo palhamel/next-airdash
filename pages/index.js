@@ -21,12 +21,12 @@ export default function Home({ initialTodos }) {
   // const { user, error, isLoading } = useUser();
 
   // Context, state:
-  const { todos, setTodos } = useContext(TodosContext)
+  const { allData, setAllData } = useContext(TodosContext)
   // Set state to initial run data:
   useEffect(() => {
-    setTodos(initialTodos)
+    setAllData(initialTodos)
   }, [])
-  // console.log('check whats in State todos at run:', todos);
+  console.log('check whats in State todos at run:', allData);
 
   return (
     <div>
@@ -43,7 +43,7 @@ export default function Home({ initialTodos }) {
           {/* List all data using react context: */}
           {/* {initialTodos.map((todo) => (<Todo key={todo.id} todo={todo} /> ))} */}
 
-          {todos && todos.map((todo) => <Todo todo={todo} key={todo.id} />)}
+          {allData && allData.map((data) => <Todo data={data} key={data.id} />)}
         </ul>
       </main>
     </div>

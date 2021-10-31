@@ -1,8 +1,10 @@
-#### Next.js dashboard in progress
+## Next.js dashboard in progress
 
-> npm install
+#### install dependencies:
+- npm install
 
-> npm run dev
+#### run dev server:
+- npm run dev
 
 #### Tech used:
 
