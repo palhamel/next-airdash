@@ -1,6 +1,6 @@
 
 const Airtable = require('airtable')
-const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(
+const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY, field: "projectName", direction: "desc" }).base(
   process.env.AIRTABLE_BASE_ID
 )
 
@@ -17,7 +17,7 @@ const getMinifiedRecord = (record) => {
   }
   return {
     id: record.id,
-    fields: record.fields
+    fields: record.fields,
   }
 }
 

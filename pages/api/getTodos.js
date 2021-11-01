@@ -4,6 +4,8 @@
 // import helper function:
 import { table, minifyRecords } from './utils/Airtable'
 
+// console.log(table);
+
 export default async (req, res) => {
   try {
     const records = await table.select({}).firstPage()

@@ -26,7 +26,7 @@ export default function Home({ initialTodos }) {
   useEffect(() => {
     setAllData(initialTodos)
   }, [])
-  console.log('check whats in State todos at run:', allData);
+  console.log('check whats in State at run:', allData);
 
   return (
     <div>
@@ -39,13 +39,26 @@ export default function Home({ initialTodos }) {
       <main>
         <h1>Display some data here:</h1>
         <br />
+
         <ul>
           {/* List all data using react context: */}
           {/* {initialTodos.map((todo) => (<Todo key={todo.id} todo={todo} /> ))} */}
-          <li>Store Name</li>
+          <li className='bg-white flex items-center shadow-lg  my-2 py-2 px-4'>
+            <p className="flex-1 text-gray-800 font-bold">Store</p>
+            <p className="flex-1 text-gray-800 font-bold">City</p>
+            <p className="flex-1 text-gray-800 font-bold">Image</p>
+            <p className="flex-1 text-gray-800 font-bold">Products</p>
+            <p className="flex-1 text-gray-800 font-bold">Campaign</p>
+            <p className="flex-1 text-gray-800 font-bold">Date updated</p>
+   
+          </li>
 
           {allData && allData.map((data) => <ShowData data={data} key={data.id} />)}
         </ul>
+
+        {/* new table data: */}
+
+        
       </main>
     </div>
   )

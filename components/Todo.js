@@ -27,10 +27,13 @@ export default function ShowData({ data }) {
       /> */}
       <p className="flex-1 text-gray-800">{data.fields.projectName}</p>
       {/* <p className={`flex-1 text-gray-800 ${data.fields.completed ? 'line-through' : ''}`}>{data.fields.projectId}</p> */}
-      <p className="flex-1 text-gray-800">{data.fields.projectId}</p>
-      <p className="flex-1 text-gray-800">{data.fields.deviceName}</p>
-      <p className="flex-1 text-gray-800">{data.fields.lastModified}</p>
+      <p className="flex-1 text-gray-800">{data.fields.city}</p>
+      <p className="flex-1 text-gray-800">{data.fields.imageRes}</p>
+      <p className="flex-1 text-gray-800">{data.fields.products}</p>
       <p className="flex-1 text-gray-800">{data.fields.campaign}</p>
+      <p className="flex-1 text-gray-800">{data.fields.lastModified}</p>
+      {/* <p className="flex-1 text-gray-800">{data.fields.projectId}</p> */}
+      {/* <p className="flex-1 text-gray-800">{data.fields.deviceName}</p> */}
       {/* <button
         type='button'
         className='text-sm bg-red-500 hover:bg-red-600 text-white py-1 px-2 rounded '

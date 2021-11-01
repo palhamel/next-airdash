@@ -2,7 +2,7 @@
 
 #### Tech used:
 
-- Next.js with API routes, React context, AirTable, Tailwind CSS, ~~Auth0~~, 
+- Next.js with API routes, React context, AirTable.js, Tailwind CSS, ~~Auth0~~, 
 
 
 
@@ -15,6 +15,11 @@ npm install
 ```
 npm run dev
 ```
+
+
+
+
+
 
 <!-- 
 
